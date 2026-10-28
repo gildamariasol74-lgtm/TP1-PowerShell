@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico 1 - PowerShell</title>
+</head>
+<body>
+    <h1>Trabajo Práctico 1: PowerShell</h1>
+
+    <p><strong>Módulo:</strong> Programación para Seguridad Informática</p>
+    <p><strong>Docente:</strong> Lic. Carlos Pacheco</p>
+
+    <h2>Objetivo</h2>
+    <p>Obtener información sobre PowerShell, la política de ejecución,
+    la edición del sistema operativo y los datos de la computadora.</p>
+
+    <h2>Script de PowerShell</h2>
+    <pre><code># Version de PowerShell
+$PSVersionTable.PSVersion
+
+# Politica de ejecucion
+Get-ExecutionPolicy
+
+# Informacion del sistema operativo
+Get-ComputerInfo | Select-Object OsName, WindowsEditionId, OsVersion
+
+# Informacion completa de la computadora
+systeminfo</code></pre>
+
+    <h2>Descripción</h2>
+    <p>El script permite consultar la versión de PowerShell, conocer
+    la política de ejecución, identificar el sistema operativo y
+    obtener información general del equipo.</p>
+</body>
+</html>
